@@ -1,0 +1,103 @@
+:root {
+  --bg: #ffbed1;
+  --primary: #ff5182;
+  --login: #ff78ae;
+  --hover: #fcc4da;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--hover);
+  font-family: Poppins;
+}
+.container {
+  text-align: center;
+  background: none;
+  padding: 0;
+  border-radius: 10px;
+  width: 350px;
+  height: 250px;
+}
+
+.container h1 {
+  margin-bottom: 0;
+  color: #000;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1em;
+  font-family: Poppins;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: #000000;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: crimson;
+}
+
+.help-icon a {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.5em;
+  color: #0a0808;
+  cursor: pointer;
+  transition: crimson 0.3s;
+}
+
+.help-icon a:hover {
+  color: crimson;
+}
+
+#message {
+  margin-top: 15px;
+  font-size: 18px;
+  font-family: Poppins;
+}
+
+/* media queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* hp */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
